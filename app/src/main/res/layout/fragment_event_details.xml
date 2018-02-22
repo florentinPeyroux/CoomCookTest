@@ -1,0 +1,597 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.eservices.floamnx.coomcook.event.FragmentEventDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="20dp">
+
+                    <com.eservices.floamnx.coomcook.event.util.ShapeImageView
+                        android:id="@+id/foodPicture"
+                        style="@style/ImageViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:siShape="@raw/b" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <com.eservices.floamnx.coomcook.font.RobotoTextView
+                            android:id="@+id/eventTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Nom de l'événement"
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+
+                        <com.eservices.floamnx.coomcook.font.RobotoTextView
+                            android:id="@+id/eventInterest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:background="#00000000"
+                            android:padding="5dp"
+                            android:text="Intêret"
+                            android:textColor="@color/iconColor"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.eservices.floamnx.coomcook.font.RobotoTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text=" Lieu"
+                                android:textColor="#000"
+                                android:textSize="14dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:background="@android:color/transparent"
+                                    android:text="@string/icon_localisation"
+                                    android:textColor="@color/iconColor"
+                                    android:textSize="24sp" />
+
+                                <com.eservices.floamnx.coomcook.font.RobotoTextView
+                                    android:id="@+id/eventCity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Paris, France"
+                                    android:textColor="#7000"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.eservices.floamnx.coomcook.font.RobotoTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="Places"
+                                android:textColor="#000"
+                                android:textSize="14dp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:background="@android:color/transparent"
+                                    android:text="@string/material_icon_account"
+                                    android:textColor="@color/iconColor"
+                                    android:textSize="24sp" />
+
+
+                                <com.eservices.floamnx.coomcook.font.RobotoTextView
+                                    android:id="@+id/eventAllowedPlaces"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:text="4"
+                                    android:textColor="#7000"
+                                    android:textSize="14dp" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp">
+
+                        <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="8dp"
+                            android:background="@android:color/transparent"
+                            android:text="@string/material_icon_calendar"
+                            android:textColor="@color/iconColor"
+                            android:textSize="24sp" />
+
+                        <com.eservices.floamnx.coomcook.font.RobotoTextView
+                            android:id="@+id/date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="2dp"
+                            android:text="24/02/2018"
+                            android:textColor="#7000"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.eservices.floamnx.coomcook.font.RobotoTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text=" Heure début"
+                                android:textColor="#000"
+                                android:textSize="12dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:background="@android:color/transparent"
+                                    android:text="@string/material_icon_start"
+                                    android:textColor="@color/iconColor"
+                                    android:textSize="24sp" />
+
+                                <com.eservices.floamnx.coomcook.font.RobotoTextView
+                                    android:id="@+id/startTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:text="21:00"
+                                    android:textColor="#7000"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.eservices.floamnx.coomcook.font.RobotoTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="Heure fin"
+                                android:textColor="#000"
+                                android:textSize="12dp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:background="@android:color/transparent"
+                                    android:text="@string/material_icon_end"
+                                    android:textColor="@color/iconColor"
+                                    android:textSize="24sp" />
+
+
+                                <com.eservices.floamnx.coomcook.font.RobotoTextView
+                                    android:id="@+id/endTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:text="23:59"
+                                    android:textColor="#7000"
+                                    android:textSize="14dp" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/eventOwnerPic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp" />
+
+            <com.eservices.floamnx.coomcook.font.RobotoTextView
+                android:id="@+id/eventOwnerName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="floamnx"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear1"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="10px">
+
+                <ImageView
+                    android:id="@+id/profile1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp" />
+
+                <com.eservices.floamnx.coomcook.font.RobotoTextView
+                    android:id="@+id/eventParticipant1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:text="Vide"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="10px">
+
+                <ImageView
+                    android:id="@+id/profile2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp" />
+
+                <com.eservices.floamnx.coomcook.font.RobotoTextView
+                    android:id="@+id/eventParticipant2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:text="Vide"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="10px">
+
+                <ImageView
+                    android:id="@+id/profile3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp" />
+
+                <com.eservices.floamnx.coomcook.font.RobotoTextView
+                    android:id="@+id/eventParticipant3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:text="Vide"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="10px">
+
+                <ImageView
+                    android:id="@+id/profile4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp" />
+
+                <com.eservices.floamnx.coomcook.font.RobotoTextView
+                    android:id="@+id/eventParticipant4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:text="Vide"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear2"
+            android:layout_centerInParent="false"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/icon_food"
+                android:textColor="@color/iconColor"
+                android:textSize="24sp" />
+
+
+            <com.eservices.floamnx.coomcook.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="Plat"
+                android:textColor="@color/iconColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear3"
+            android:layout_centerInParent="false"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+
+            <com.eservices.floamnx.coomcook.font.RobotoTextView
+                android:id="@+id/eventFood"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="Ma description " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear4"
+            android:layout_centerInParent="false"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/material_icon_description"
+                android:textColor="@color/iconColor"
+                android:textSize="24sp" />
+
+
+            <com.eservices.floamnx.coomcook.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="Description"
+                android:textColor="@color/iconColor" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/linear6"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear5"
+        android:layout_centerInParent="false"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+
+
+            <com.eservices.floamnx.coomcook.font.RobotoTextView
+                android:id="@+id/eventDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="Ma description " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear6"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:padding="20px">
+
+            <Button
+                android:id="@+id/eventJoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/iconColor"
+                android:text="Rejoindre"
+                android:textAlignment="gravity" />
+
+            <Button
+                android:id="@+id/eventEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/iconColor"
+                android:text="Modifier"
+                android:textAlignment="gravity" />
+
+            <Button
+                android:id="@+id/eventCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/iconColor"
+                android:text="Annuler"
+                android:textAlignment="gravity"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+

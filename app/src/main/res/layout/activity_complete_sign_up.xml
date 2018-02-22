@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@drawable/gradient_background"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <LinearLayout
+                android:id="@+id/layoutPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/profile" />
+
+                <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                    android:id="@+id/selectPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/icon_circle_plus"
+                    android:textSize="20pt" />
+
+                <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                    android:id="@+id/uploadPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/icon_upload"
+                    android:textSize="20pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Nom"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/nom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:backgroundTintMode="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:drawableBottom="@android:color/transparent"
+                    android:ems="10"
+                    android:inputType="textNoSuggestions"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="24sp">
+
+                    <requestFocus />
+                </EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Prénom"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/prenom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:backgroundTintMode="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:drawableBottom="@android:color/transparent"
+                    android:ems="10"
+                    android:inputType="textNoSuggestions"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="24sp">
+
+                    <requestFocus />
+                </EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Date de naissance"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/buttonDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Choisir une date"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Plat préféré"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerPlats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/plats" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Intêret"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerInterets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/interets" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Ville"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/ville"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:backgroundTintMode="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:drawableBottom="@android:color/transparent"
+                    android:ems="10"
+                    android:inputType="textNoSuggestions"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="24sp">
+
+                    <requestFocus />
+                </EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutchampsmanquant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/Textchampmanquant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/registerUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_button_selector"
+                    android:gravity="center"
+                    android:minHeight="36dp"
+                    android:minWidth="64dp"
+                    android:padding="8dp"
+                    android:text="S'enregistrer"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ic_chat_background">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_msg_bar"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/emoticonButton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_white"
+            android:clickable="false"
+            android:contentDescription="Emoticons"
+            android:src="@drawable/ic_menu_smiling" />
+
+
+        <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+            android:id="@+id/sendButton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_selector"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/material_icon_send_msg"
+            android:textColor="@color/iconColor"
+            android:gravity="center"
+            android:textSize="24sp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@+id/emoticonButton"
+            android:layout_toLeftOf="@id/sendButton"
+            android:layout_toRightOf="@+id/emoticonButton"
+            android:layout_toStartOf="@id/sendButton"
+            android:background="@drawable/bg_msg_bar"
+            android:hint="Tapez votre message ..."
+            android:inputType="textCapSentences"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp" />
+
+    </RelativeLayout>
+
+</merge>

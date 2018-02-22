@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">CoomCook</string>
+    <string name="profile">Profile</string>
+    <string name="suivant">Suivant</string>
+    <string name="demarrer">Démarrer</string>
+    <string name="noEvent">Pas d\'événement participés</string>
+    <string name="vide">vide</string>
+    <array name="plats">
+        <item>Pizza</item>
+        <item>Pâtes</item>
+        <item>Lasagne</item>
+        <item>Couscous</item>
+
+    </array>
+
+    <array name="interets">
+        <item>Sport</item>
+        <item>Politique</item>
+        <item>Langue</item>
+        <item>Musique</item>
+        <item>Cinéma</item>
+        <item>Philosophie</item>
+        <item>Patisserie</item>
+    </array>
+
+    <array name="nombre">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholeventDescriptiontext -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="lorem_ipsum_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="cd_main_image">main image</string>
+
+
+    <string name="fontello_heart_empty">&#xe9b5;</string>
+    <string name="fontello_heart_full">&#xe9b6;</string>
+    <string name="icon_alarm_check">&#xe805;</string>
+    <string name="icon_circle_plus">&#xea81;</string>
+    <string name="icon_upload">&#xeb30;</string>
+    <string name="icon_food">&#xe980;</string>
+    <string name="icon_interest">&#xe937;</string>
+    <string name="icon_localisation">&#xea05;</string>
+    <string name="icon_age">&#xeb58;</string>
+    <string name="icon_event">&#xeaac;</string>
+    <string name="icon_notification">&#xe826;</string>
+    <string name="icon_proposer">&#xea81;</string>
+    <string name="icon_chercher">&#xea01;</string>
+    <string name="icon_parametres">&#xeabe;</string>
+    <string name="icon_messagerie">&#xea11;</string>
+    <string name="icon_logout">&#xe9fc;</string>
+    <string name="material_icon_chevron_down">&#xe874;</string>
+    <string name="material_icon_chevron_right">&#xe876;</string>
+    <string name="material_icon_chevron_up">&#xe877;</string>
+    <string name="material_icon_check_empty">&#xe86a;</string>
+    <string name="fontello_x_mark">&#xe887;</string>
+    <string name="fontello_x_mark_masked">&#xe885;</string>
+    <string name="fontello_microfon">&#xea18;</string>
+    <string name="material_icon_checked_full">&#xe86f;</string>
+    <string name="material_icon_check_full">&#xe86e;</string>
+    <string name="material_icon_send_msg">&#xeab4;</string>
+    <string name="material_icon_account">&#xe800;</string>
+    <string name="material_icon_chat">&#xe89d;</string>
+    <string name="material_icon_calendar">&#xe845;</string>
+    <string name="material_icon_start">&#xeb0d;</string>
+    <string name="material_icon_end">&#xeb0b;</string>
+    <string name="material_icon_description">&#xea8c;</string>
+    <string name="material_icon_star">&#xeadc;</string>
+    <string name="material_icon_flash">&#xe96f;</string>
+    <string name="material_icon_edit">&#xe924;</string>
+    <string name="material_icon_contact">&#xea65;</string>
+    <string name="material_icon_help">&#xe9b7;</string>
+    <string name="material_icon_point_empty">&#xe868;</string>
+    <string name="material_icon_point_full">&#xe869;</string>
+
+    <string name="drawer_open">Ouverture du navigatino drawer</string>
+    <string name="drawer_close">Fermeture du navigatino drawer</string>
+
+    <string name="participation">Voulez vous rejoindre cette événement ?</string>
+    <string name="annuler_participation">Voulez vous annuler votre participation à cette événement ?</string>
+
+</resources>

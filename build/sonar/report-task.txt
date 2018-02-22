@@ -1,0 +1,6 @@
+projectKey=CoomCook
+serverUrl=http://localhost:9000
+serverVersion=7.0.0.36138
+dashboardUrl=http://localhost:9000/dashboard/index/CoomCook
+ceTaskId=AWG5zctxnKjh0dsqRe0r
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWG5zctxnKjh0dsqRe0r

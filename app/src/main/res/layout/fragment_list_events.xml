@@ -1,0 +1,302 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eservices.floamnx.coomcook.event.FragmentListEvent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="64dp"
+                    android:layout_marginTop="32dp"
+                    android:gravity="right" >
+
+                    <com.eservices.floamnx.coomcook.font.RobotoTextView
+                        android:id="@+id/activity_search_bar_shop_filters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/transparent_button_selector"
+                        android:minHeight="36dp"
+                        android:minWidth="64dp"
+                        android:padding="8dp"
+                        android:text="FILTRES"
+                        android:textColor="@color/iconColor"
+                        android:textSize="16sp"
+                        app:typeface="robotoBlack" />
+
+                    <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                        android:id="@+id/activity_search_bar_shop_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:padding="8dp"
+                        android:text="@string/material_icon_chevron_down"
+                        android:textColor="@color/iconColor"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@color/iconColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_search_bar_shop_filters_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="8dp" >
+
+                        <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                            android:id="@+id/iconTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:padding="8dp"
+                            android:text="@string/material_icon_check_empty"
+                            android:textColor="@color/iconColor"
+                            android:textSize="26dp" />
+
+                        <com.eservices.floamnx.coomcook.font.RobotoTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="0"
+                            android:background="@drawable/transparent_button_selector"
+                            android:maxLines="1"
+                            android:text="Titre"
+                            android:textColor="@color/iconColor"
+                            android:textSize="20sp"
+                            app:typeface="robotoLight" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="20dp" >
+
+                        <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                            android:id="@+id/iconFood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:padding="8dp"
+                            android:text="@string/material_icon_check_empty"
+                            android:textColor="@color/iconColor"
+                            android:textSize="26dp" />
+
+                        <com.eservices.floamnx.coomcook.font.RobotoTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="0"
+                            android:background="@drawable/transparent_button_selector"
+                            android:maxLines="1"
+                            android:text="Repas"
+                            android:textColor="@color/iconColor"
+                            android:textSize="20sp"
+                            app:typeface="robotoLight" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="8dp" >
+
+                        <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                            android:id="@+id/iconInterest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:padding="8dp"
+                            android:text="@string/material_icon_check_empty"
+                            android:textColor="@color/iconColor"
+                            android:textSize="26dp" />
+
+                        <com.eservices.floamnx.coomcook.font.RobotoTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="0"
+                            android:background="@drawable/transparent_button_selector"
+                            android:maxLines="1"
+                            android:text="Activité"
+                            android:textColor="@color/iconColor"
+                            android:textSize="20sp"
+                            app:typeface="robotoLight" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="20dp" >
+
+                        <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                            android:id="@+id/iconCity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:padding="8dp"
+                            android:text="@string/material_icon_check_empty"
+                            android:textColor="@color/iconColor"
+                            android:textSize="26dp" />
+
+                        <com.eservices.floamnx.coomcook.font.RobotoTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="0"
+                            android:background="@drawable/transparent_button_selector"
+                            android:maxLines="1"
+                            android:text="Ville"
+                            android:textColor="@color/iconColor"
+                            android:textSize="20sp"
+                            app:typeface="robotoLight" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/gradient_background"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical" >
+
+                <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/icon_chercher"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    tools:ignore="SpUsage" />
+
+                <EditText
+                    android:id="@+id/search_field"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:inputType="text"
+                    android:textColor="@color/white" >
+
+                    <requestFocus />
+                </EditText>
+
+                <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                    android:id="@+id/search_microfon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/fontello_microfon"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    tools:ignore="SpUsage" />
+
+                <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                    android:id="@+id/search_x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/fontello_x_mark"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    tools:ignore="SpUsage" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <com.eservices.floamnx.coomcook.font.RobotoTextView
+                    android:id="@+id/search_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/transparent_button_selector"
+                    android:minHeight="36dp"
+                    android:minWidth="64dp"
+                    android:padding="8dp"
+                    android:text="CHERCHER"
+                    android:textColor="@android:color/white"
+                    app:typeface="robotoMedium" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/list_view" />
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list_view"
+        style="@style/ListViewStyle" />
+    </LinearLayout>
+
+    <!--<ListView xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/list_view"-->
+        <!--style="@style/ListViewStyle" />-->
+
+</RelativeLayout>

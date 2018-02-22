@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/userPicture"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/surname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text=" Nom et prénom"
+                                android:textColor="#000"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:background="#00000000"
+                                android:padding="5dp"
+                                android:text="Lendemal Simmonce"
+                                android:textColor="#7000"
+                                android:textColorHint="#000"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text=" Lieu"
+                                    android:textColor="#000"
+                                    android:textSize="14dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginLeft="8dp"
+                                        android:background="@android:color/transparent"
+                                        android:text="@string/icon_localisation"
+                                        android:textColor="@color/iconColor"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:id="@+id/userLocation"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="2dp"
+                                        android:text="Paris, France"
+                                        android:textColor="#7000"
+                                        android:textSize="14dp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:text=" Age"
+                                    android:textColor="#000"
+                                    android:textSize="14dp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginLeft="8dp"
+                                        android:background="@android:color/transparent"
+                                        android:text="@string/icon_age"
+                                        android:textColor="@color/iconColor"
+                                        android:textSize="24sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/userAge"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="2dp"
+                                        android:text="23"
+                                        android:textColor="#7000"
+                                        android:textSize="14dp" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#ACACAC" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="50dp"
+                    android:background="#ACACAC" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@android:color/transparent"
+                        android:text="@string/material_icon_contact"
+                        android:textColor="@color/iconColor"
+                        android:textSize="24sp" />
+
+
+                    <com.eservices.floamnx.coomcook.font.RobotoTextView
+                        android:id="@+id/contactTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="Contacter"
+                        android:textAppearance="@style/TextViewAppearance"
+                        android:textColor="@color/iconColor" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="50dp"
+                    android:background="#ACACAC" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#ACACAC" />
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EEEEEE"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/material_icon_star"
+                        android:textColor="@color/iconColor"
+                        android:textSize="24sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Avis"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp">
+
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/Widget.AppCompat.RatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="3"
+                        android:stepSize="1" />
+
+                    <Button
+                        android:id="@+id/vote"
+                        android:layout_width="106dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/iconColor"
+                        android:text="Voter" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ACACAC" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/icon_food"
+                        android:textColor="@color/iconColor"
+                        android:textSize="24sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Plats"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/userFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:padding="5dp"
+                    android:text="Pizza"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ACACAC" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/icon_interest"
+                        android:textColor="@color/iconColor"
+                        android:textSize="24sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Activités"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/userInterest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="Football"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ACACAC" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/icon_event"
+                        android:textColor="@color/iconColor"
+                        android:textSize="24sp" />
+
+
+                    <TextView
+                        android:id="@+id/lastEventsTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:text="Derniers événements"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp">
+
+
+                <com.nhaarman.listviewanimations.itemmanipulation.DynamicListView
+                    android:id="@+id/dynamic_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

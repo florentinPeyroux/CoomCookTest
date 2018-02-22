@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/userPicture"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                                android:id="@+id/selectPhoto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="@string/icon_circle_plus"
+                                android:textSize="20pt" />
+
+                            <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                                android:id="@+id/uploadPhoto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="@string/icon_upload"
+                                android:textSize="20pt" />
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/surname"
+                                android:layout_width="136dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Prénom"
+                                android:textColor="#000"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/lastName"
+                                android:layout_width="136dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:background="#00000000"
+                                android:padding="5dp"
+                                android:text="Nom"
+                                android:textColor="#7000"
+                                android:textColorHint="#000"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text=" Lieu"
+                                    android:textColor="#000"
+                                    android:textSize="14dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginLeft="8dp"
+                                        android:background="@android:color/transparent"
+                                        android:text="@string/icon_localisation"
+                                        android:textColor="@color/iconColor"
+                                        android:textSize="24sp" />
+
+                                    <EditText
+                                        android:id="@+id/userLocation"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="2dp"
+                                        android:text="Paris"
+                                        android:textColor="#7000"
+                                        android:textSize="14dp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:text=" Age"
+                                    android:textColor="#000"
+                                    android:textSize="14dp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginLeft="8dp"
+                                        android:background="@android:color/transparent"
+                                        android:text="@string/icon_age"
+                                        android:textColor="@color/iconColor"
+                                        android:textSize="24sp" />
+
+
+                                    <EditText
+                                        android:id="@+id/userAge"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="2dp"
+                                        android:text="23"
+                                        android:textColor="#7000"
+                                        android:textSize="14dp" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#ACACAC" />
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EEEEEE"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/icon_food"
+                        android:textColor="@color/iconColor"
+                        android:textSize="24sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Plats"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+
+                <Spinner
+                    android:id="@+id/userFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:padding="5dp"
+                    android:entries="@array/plats"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ACACAC" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.eservices.floamnx.coomcook.font.MaterialDesignIconsTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/icon_interest"
+                        android:textColor="@color/iconColor"
+                        android:textSize="24sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Activités"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/userInterest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:padding="5dp"
+                    android:entries="@array/interets"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ACACAC" />
+
+
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="20dp"
+            >
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/iconColor"
+                android:text="Enregistrer"/>
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/iconColor"
+                android:text="Annuler"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
